@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Echo von Neustadt | Geheimakte Opferstätte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flashlight" id="flashlight"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="glitch" data-text="OPFERSTÄTTE">OPFERSTÄTTE</h1>
+            <p class="subtitle">Neustadt bei Coburg - Sektor B-12</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="dossier">
+            <div class="stamp">GEHEIM</div>
+            <h2>Объект: Здание на Марктплатц</h2>
+            <p><strong>Координаты:</strong> 50.3297° N, 11.1265° E</p>
+            <p><strong>Дата обнаружения:</strong> 14 февраля 2024 года</p>
+            <div class="description">
+                <p>Во время работ по укреплению фундамента в бывшем купеческом доме была обнаружена полость. Внутри найдены следы ритуальной активности, нетипичной для Франконии XVIII века. Стены покрыты копотью, в центре — каменный монолит.</p>
+            </div>
+        </section>
+
+        <section class="evidence">
+            <h3>Улики из раскопа</h3>
+            <div class="grid">
+                <div class="evidence-item" onclick="showDetail('altar')">
+                    <img src="https://images.unsplash.com/photo-1519074063912-ad25b57b984a?auto=format&fit=crop&q=80&w=400" alt="Altar">
+                    <span>Артефакт #1: Монолит</span>
+                </div>
+                <div class="evidence-item" onclick="showDetail('inscription')">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=400" alt="Inscriptions">
+                    <span>Артефакт #2: Надписи</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="journal">
+            <h3>Дневник смотрителя (Перевод)</h3>
+            <blockquote id="typing-text">
+                "Они говорят, что куклы в Нойштадте делают для детей. Но те, что мы нашли здесь, внизу... у них нет лиц. Только выжженные руны на груди. Город спит, но под землей что-то продолжает дышать."
+            </blockquote>
+        </section>
+    </main>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
